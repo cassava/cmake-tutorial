@@ -2,8 +2,6 @@
 
 namespace mylib {
 
-int get_answer() {
-    return 42;
-}
+int get_answer();
 
 }
