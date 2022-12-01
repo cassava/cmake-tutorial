@@ -1,3 +1,4 @@
+CXXFLAGS += -Wall -pedantic
 
 hello: hello.cpp
-	${CXX} -o $@ $<
+	${CXX} ${CXXFLAGS} -o $@ $<
