@@ -8,6 +8,8 @@ project(
     LANGUAGES CXX
 )
 
+find_package(Boost COMPONENTS chrono REQUIRED)
+
 # https://cmake.org/cmake/help/latest/command/add_subdirectory.html
 add_subdirectory(mylib)
 add_subdirectory(app)
