@@ -8,3 +8,9 @@ ${target_hello}: ${target_hello_objects}
 
 %.o: %.cpp
 	${CXX} -c ${CXXFLAGS} -o $@ $<
+
+.PHONY: clean
+clean:
+	for file in ${target_hello_objects} ${target_hello}; do \
+		[ -f $$file ] && rm $$file; \
+	done
